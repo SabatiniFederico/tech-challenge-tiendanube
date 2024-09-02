@@ -11,4 +11,5 @@ func mapUrlsToControllers(router *gin.Engine, transactionsController *controller
 	})
 
 	router.POST("/process-payment", transactionsController.CalculatePayment)
+	router.GET("/list-transactions/:id", transactionsController.ListTransactions)
 }
