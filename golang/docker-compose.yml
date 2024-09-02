@@ -1,5 +1,11 @@
-version: '3.0'
 services:
+  gin-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    container_name: app_container
   json-server:
     image: vimagick/json-server
     command: -h 0.0.0.0 -p 8080 -w /config/db.json

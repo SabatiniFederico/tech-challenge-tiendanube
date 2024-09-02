@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	err := server.NewServer().Run(":8080")
+	err := server.NewServer().Run(":8000")
 	if err != nil {
 		log.Fatal("Error on launching server")
 	}
