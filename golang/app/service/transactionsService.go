@@ -11,3 +11,7 @@ type (
 		Restclient transactionsAndPayablesRestClient
 	}
 )
+
+func (transactionService TransactionsService) CalculateTransactionAndPayable() {
+
+}
