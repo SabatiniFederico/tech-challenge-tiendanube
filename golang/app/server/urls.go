@@ -10,5 +10,5 @@ func mapUrlsToControllers(router *gin.Engine, transactionsController *controller
 		c.String(200, "Hello World")
 	})
 
-	router.GET("/payables", transactionsController.CalculatePayment)
+	router.POST("/process-payment", transactionsController.CalculatePayment)
 }
